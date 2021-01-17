@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.layout {
+	display: flex;
+}
+
+.horizontal {
+	flex-direction: row;
+}
+
+.vertical {
+	flex-direction: column;
+}
+
+.flex {
+	flex: 1 1 0.0000000000001px;
+}
+
+.flex-none {
+	flex: none;
+}
+
+.mtop-1 {
+	margin-top: 1em;
+}
+
+.mtop-2 {
+	margin-top: 0.5em;
+}
+
+.mleft-1 {
+	margin-left: 1em;
+}
+
+.mleft-2 {
+	margin-left: 0.5em;
+}
+
+.display-box {
+	border: solid 1px;
+	overflow: auto;
+	white-space: pre;
+	padding: 0.25em 0.5em;
+}
+
+.title {
+	font-size: xx-large;
+	margin-bottom: 0.5em;
+}
+
+/* Theme Black */
+.theme-black {
+	color: forestgreen;
+	background-color: black;
+}
+.theme-black .display-box {
+	border-color: forestgreen;
+}
+.theme-black .focus {
+	color: yellow;
+}
+.theme-black .requiring {
+	color: red;
+}
+.theme-black .required {
+	color: aqua;
+}
+
+/* Theme White */
+.theme-white {
+	color: black;
+	background-color: white;
+}
+.theme-white .display-box {
+	border-color: black;
+}
+.theme-white .focus {
+	color: orange;
+}
+.theme-white .requiring {
+	color: red;
+}
+.theme-white .required {
+	color: blue;
+}
+
+.control-panel {
+	position: absolute;
+	opacity: 0.5;
+	width: 200px;
+	height: 500px;
+	right: calc(100vw - 20px);
+	top: 0;
+	background-color: black;
+}
+.control-panel:hover {
+	left: 10px;
+	right: initial;
+}
